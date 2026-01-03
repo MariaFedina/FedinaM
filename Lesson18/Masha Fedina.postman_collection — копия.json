@@ -1,0 +1,606 @@
+{
+	"info": {
+		"_postman_id": "ebcbfa21-225d-4e5e-bc2f-778eb7edfd80",
+		"name": "Masha Fedina",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7847865"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mashahyuu\",\r\n    \"age\": 27,\r\n    \"gender\": \"female\",\r\n    \"city\": \"Kyiv\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+					"protocol": "https",
+					"host": [
+						"em",
+						"staging",
+						"api",
+						"onereach",
+						"ai"
+					],
+					"path": [
+						"http",
+						"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User Negative1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Val\",\r\n    \"age\": 27,\r\n    \"gender\": \"female\",\r\n    \"city\": \"Kyiv\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+					"protocol": "https",
+					"host": [
+						"em",
+						"staging",
+						"api",
+						"onereach",
+						"ai"
+					],
+					"path": [
+						"http",
+						"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User Negative2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Valik222\",\r\n    \"age\": 27,\r\n    \"gender\": \"robot\",\r\n    \"city\": \"Kyiv\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+					"protocol": "https",
+					"host": [
+						"em",
+						"staging",
+						"api",
+						"onereach",
+						"ai"
+					],
+					"path": [
+						"http",
+						"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=e1a1e958-226b-465a-8a45-ec4f2f9871ef",
+					"protocol": "https",
+					"host": [
+						"em",
+						"staging",
+						"api",
+						"onereach",
+						"ai"
+					],
+					"path": [
+						"http",
+						"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "e1a1e958-226b-465a-8a45-ec4f2f9871ef"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users Negative1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?id=e1a1e958-226b-465a-8a45-ec4f2f9871ef1",
+					"protocol": "https",
+					"host": [
+						"em",
+						"staging",
+						"api",
+						"onereach",
+						"ai"
+					],
+					"path": [
+						"http",
+						"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+						"users"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "e1a1e958-226b-465a-8a45-ec4f2f9871ef1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users Negative2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users?name=Valik2222",
+					"protocol": "https",
+					"host": [
+						"em",
+						"staging",
+						"api",
+						"onereach",
+						"ai"
+					],
+					"path": [
+						"http",
+						"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+						"users"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Valik2222"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ivanna\",\r\n    \"age\": 33,\r\n    \"gender\": \"male\",\r\n    \"city\": \"Kyiv\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+					"protocol": "https",
+					"host": [
+						"em",
+						"staging",
+						"api",
+						"onereach",
+						"ai"
+					],
+					"path": [
+						"http",
+						"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Valik25\",\r\n    \"id\": \"b419cf8b-5203-4d1d-8df8-2cd96d5cd593\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/{{path}}/{{resource}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"{{path}}",
+						"{{resource}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User Negative1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Valik25\",\r\n    \"id\": \"ff4d43a4-08e5-44e7-a62c-10c809d9cb841\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/{{path}}/{{resource}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"{{path}}",
+						"{{resource}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User Negative2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Ivan\",\r\n    \"id\": \"ff4d43a4-08e5-44e7-a62c-10c809d9cb84\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/{{path}}/{{resource}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"{{path}}",
+						"{{resource}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New User Coll",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Valik23\",\r\n    \"age\": 26,\r\n    \"gender\": \"male\",\r\n    \"city\": \"Kyiv\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/{{path}}/{{resource}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"{{path}}",
+						"{{resource}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{baseURL}}/{{path}}/{{resource}}?id=b419cf8b-5203-4d1d-8df8-2cd96d5cd593",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"{{path}}",
+						"{{resource}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "b419cf8b-5203-4d1d-8df8-2cd96d5cd593"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Masha2777\",\r\n    \"id\": \"e1a1e958-226b-465a-8a45-ec4f2f9871ef\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/{{path}}/{{resource}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"{{path}}",
+						"{{resource}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patch negative1",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Masha2777\",\r\n    \"id\": \"e1a1e958-226b-465a-8a45-ec4f2f9871ef1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/{{path}}/{{resource}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"{{path}}",
+						"{{resource}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "patch negative2",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Masha2777\",\r\n    \"id\": \"e1a1e958-226b-465a-8a45-ec4f2f9871ef1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/{{path}}/{{resource}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"{{path}}",
+						"{{resource}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{baseURL}}/{{path}}/{{resource}}?id=b419cf8b-5203-4d1d-8df8-2cd96d5cd593",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"{{path}}",
+						"{{resource}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "b419cf8b-5203-4d1d-8df8-2cd96d5cd593"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Negative1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{baseURL}}/{{path}}/{{resource}}?id=b419cf8b-5203-4d1d-8df8-2cd96d5cd593",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"{{path}}",
+						"{{resource}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "b419cf8b-5203-4d1d-8df8-2cd96d5cd593"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Tarass\",\r\n    \"age\": 27,\r\n    \"gender\": \"male\",\r\n    \"city\": \"Odesa\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://em.staging.api.onereach.ai/http/1b3bebb7-e882-4f1e-a74b-ee381bfa69d6/users",
+					"protocol": "https",
+					"host": [
+						"em",
+						"staging",
+						"api",
+						"onereach",
+						"ai"
+					],
+					"path": [
+						"http",
+						"1b3bebb7-e882-4f1e-a74b-ee381bfa69d6",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users TAras",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/{{path}}/{{resource}}/?id={{idTaras}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"{{path}}",
+						"{{resource}}",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "{{idTaras}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User Taras",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{baseURL}}/{{path}}/{{resource}}?id={{idTaras}}",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"{{path}}",
+						"{{resource}}"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "{{idTaras}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
